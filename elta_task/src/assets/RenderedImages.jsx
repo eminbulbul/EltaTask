@@ -6,6 +6,7 @@ const RenderedImages = (props) => (
       display: "flex",
       flexDirection: "column",
       fontFamily: "'Poppins', sans-serif",
+      gridArea:"logo2"
     }}
   >
     <div>
