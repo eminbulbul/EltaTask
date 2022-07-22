@@ -15,4 +15,5 @@ export default styled.div`
     text-align: center;
     width:  10.83rem;
     height: 3.5238rem;
+    cursor: pointer;
     `
