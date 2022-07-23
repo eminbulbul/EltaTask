@@ -8,8 +8,10 @@ const ChooseTask = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <EltaLogo />
-      <WrapperContainer>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <EltaLogo />
+      </div>
+      <WrapperContainer style={{width:'40rem',margin:"auto"}}>
         <PoppinsText style={{ fontSize: "2.27rem" }}>Task One</PoppinsText>
         <Button
           style={{ margin: "auto" }}
@@ -35,7 +37,6 @@ const ChooseTask = () => {
           Go to task two page with this button
         </PoppinsText>
       </WrapperContainer>
-      
     </div>
   );
 };

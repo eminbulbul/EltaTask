@@ -7,15 +7,13 @@ const TaskTwo = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <EltaLogo
-        style={{
-          cursor: "pointer",
-          position: "initial",
-        }}
-        onClick={() => {
-          navigate("/");
-        }}
-      />
+      <div style={{cursor: "pointer",marginBottom:'3rem',display: "flex", justifyContent: "center"}}>
+        <EltaLogo
+          onClick={() => {
+            navigate("/");
+          }}
+        />
+      </div>
       <Scene>
         <a-assets>
           <img

@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 4.05rem;
+}
+.leftDiv {
+  display: flex;
+}
+.rightDiv {
+  display: flex;
+}
+.bar{
+    margin-right:1rem;
+    margin-left:1rem;
+}
+@media (max-width: 700px) {
+  .container {
+    height: 10rem;
+    align-items: center;
+  }
+  .Lbar {
+    align-self: flex-end;
+  }
+  .leftDiv {
+    align-self: flex-start;
+
+  }
+  .rightDiv {
+    align-self: flex-start;
+
+  }
+}

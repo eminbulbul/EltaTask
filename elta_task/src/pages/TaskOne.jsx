@@ -10,14 +10,14 @@ import { useNavigate } from "react-router";
 import ProjectBar from "../components/ProjectBar";
 import AllLogo from "../assets/AllLogo";
 import CheckButton from "../components/styledComponents/CheckButton";
-
+import "../components/styledComponents/styles/App.css";
 const TaskOne = () => {
   const navigate = useNavigate();
   return (
     <div>
       <WrapperContainer>
-        <ProjectBar/>
-        <AllLogo/>
+        <ProjectBar style={{ paddingTop: "1.05rem" }} />
+        <AllLogo />
         <PoppinsText style={{ fontSize: "2.27rem" }}>
           Wonderful!
           <br /> We already know how to turn your project into spectacular
@@ -41,14 +41,20 @@ const TaskOne = () => {
         <CheckButton>Virtual Tour</CheckButton>
         <CheckButton>Rendered Images</CheckButton>
         <CheckButton>Animated Video</CheckButton>
-        <Button>continue</Button>
+        <div style={{ position:"relative" }}>
+          <Button style={{position:"absolute", right:"18%"}}>continue</Button>
+        </div>
       </WrapperContainer>
-      <EltaLogo
-        style={{ cursor: "pointer" }}
-        onClick={() => {
-          navigate("/");
-        }}
-      />
+      <div
+        style={{ display: "flex", justifyContent: "flex-end", width: "90%" }}
+      >
+        <EltaLogo
+          style={{ cursor: "pointer" }}
+          onClick={() => {
+            navigate("/");
+          }}
+        />
+      </div>
     </div>
   );
 };
