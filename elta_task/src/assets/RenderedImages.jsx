@@ -1,14 +1,7 @@
 import * as React from "react";
-
+import './styles/logoStyles.css'
 const RenderedImages = (props) => (
-  <div
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      fontFamily: "'Poppins', sans-serif",
-      gridArea:"logo2"
-    }}
-  >
+  <div className="appLogo">
     <div>
       <svg
         xmlns="http://www.w3.org/2000/svg"

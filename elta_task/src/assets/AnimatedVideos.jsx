@@ -1,7 +1,7 @@
 import * as React from "react"
-
+import './styles/logoStyles.css'
 const AnimatedVideos = (props) => (
- <div style={{display: "flex", flexDirection:"column", fontFamily:"'Poppins', sans-serif"}}> 
+ <div className="appLogo"> 
 <div>
   <svg
     xmlns="http://www.w3.org/2000/svg"

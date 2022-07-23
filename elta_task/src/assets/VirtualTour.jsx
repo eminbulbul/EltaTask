@@ -1,7 +1,7 @@
 import * as React from "react";
-
+import './styles/logoStyles.css'
 const VirtualTour = (props) => (
-  <div style={{display: "flex", flexDirection:"column", fontFamily:"'Poppins', sans-serif"}}>
+  <div className="appLogo">
     <div>
     <svg
       data-name="360-degree"

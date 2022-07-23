@@ -8,6 +8,8 @@ import EltaLogo from "../assets/EltaLogo";
 import Button from "../components/styledComponents/button";
 import { useNavigate } from "react-router";
 import ProjectBar from "../components/ProjectBar";
+import AllLogo from "../assets/AllLogo";
+import CheckButton from "../components/styledComponents/CheckButton";
 
 const TaskOne = () => {
   const navigate = useNavigate();
@@ -15,6 +17,7 @@ const TaskOne = () => {
     <div>
       <WrapperContainer>
         <ProjectBar/>
+        <AllLogo/>
         <PoppinsText style={{ fontSize: "2.27rem" }}>
           Wonderful!
           <br /> We already know how to turn your project into spectacular
@@ -35,6 +38,9 @@ const TaskOne = () => {
           <RenderedImages />
           <AnimatedVideos />
         </div>
+        <CheckButton>Virtual Tour</CheckButton>
+        <CheckButton>Rendered Images</CheckButton>
+        <CheckButton>Animated Video</CheckButton>
         <Button>continue</Button>
       </WrapperContainer>
       <EltaLogo

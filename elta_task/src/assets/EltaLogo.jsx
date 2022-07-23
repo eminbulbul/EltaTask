@@ -6,7 +6,6 @@ const EltaLogo = (props) => (
     style={{
       height: "2.44rem",
       marginTop: "1.1666rem",
-      marginLeft: "62.225rem",
     }}
   >
     {/* ???? marginLeft disinda baska birseyle yapalim, buraya sonra geri doneriz */}
@@ -34,7 +33,16 @@ const EltaLogo = (props) => (
       </defs>
       <path fill="url(#a)" d="M0 0h182v41H0z" />
     </svg>
-    <OpenSansText style={{ marginLeft: "2.38rem" }}>CGI STUDIOS</OpenSansText>
+    <OpenSansText
+      style={{
+        marginLeft: "2.38rem",
+        fontSize: "1.8333rem",
+        color: "#0B2554",
+        fontWeight: "bold",
+      }}
+    >
+      CGI STUDIOS
+    </OpenSansText>
   </div>
 );
 
