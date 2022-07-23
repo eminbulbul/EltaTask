@@ -16,4 +16,5 @@ export default styled.div`
     width:  10.83rem;
     height: 3.5238rem;
     cursor: pointer;
+    
     `

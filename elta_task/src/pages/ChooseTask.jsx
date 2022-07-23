@@ -31,6 +31,9 @@ const ChooseTask = () => {
         >
           Task Two
         </Button>
+        <PoppinsText style={{ fontSize: "1rem" }}>
+          Go to task two page with this button
+        </PoppinsText>
       </WrapperContainer>
       
     </div>

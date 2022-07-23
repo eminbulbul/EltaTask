@@ -7,12 +7,14 @@ import AnimatedVideos from "../assets/AnimatedVideos";
 import EltaLogo from "../assets/EltaLogo";
 import Button from "../components/styledComponents/button";
 import { useNavigate } from "react-router";
+import ProjectBar from "../components/ProjectBar";
 
 const TaskOne = () => {
   const navigate = useNavigate();
   return (
     <div>
       <WrapperContainer>
+        <ProjectBar/>
         <PoppinsText style={{ fontSize: "2.27rem" }}>
           Wonderful!
           <br /> We already know how to turn your project into spectacular

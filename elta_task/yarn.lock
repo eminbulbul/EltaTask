@@ -4399,7 +4399,7 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-"document-register-element@github:dmarcos/document-register-element#8ccc532b7":
+document-register-element@dmarcos/document-register-element#8ccc532b7:
   version "0.5.4"
   resolved "https://codeload.github.com/dmarcos/document-register-element/tar.gz/8ccc532b7f3744be954574caf3072a5fd260ca90"
 
@@ -12271,7 +12271,7 @@ websocket-extensions@>=0.1.1:
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
   integrity sha512-OqedPIGOfsDlo31UNwYbCFMSaO9m9G/0faIHj5/dZFDMFqPTcx6UwqyOy3COEaEOg/9VsGIpdqn62W5KhoKSpg==
 
-"webvr-polyfill@github:dmarcos/webvr-polyfill#a02a8089b":
+webvr-polyfill@dmarcos/webvr-polyfill#a02a8089b:
   version "0.9.25"
   resolved "https://codeload.github.com/dmarcos/webvr-polyfill/tar.gz/a02a8089b755e7e306676030e281d81668adb87d"
   dependencies:
