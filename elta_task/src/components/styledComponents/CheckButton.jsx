@@ -1,24 +1,17 @@
-import styled from "styled-components";
+import React from "react";
+import './styles/CheckButton.css'
+const CheckButton = () => {
+  return (
+    <div className="check-Button">
+      <input
+        style={{ transform: "scale(1.83)", marginRight: "1rem" }}
+        type="checkbox"
+        name="RenderedImages"
+        id="RenderedImages"
+      />
+      <label htmlFor="RenderedImages">Rendered Images</label>
+    </div>
+  );
+};
 
-export default styled.div`
-  display: none;
-
-  @media (max-width: 700px) {
-    display:block ;
-    background-color: #1d62e2;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5rem;
-    width: 80%;
-    margin: auto;
-    border-radius: 1.11rem;
-
-    /* margin: auto; */
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-
-    cursor: pointer;
-  }
-`;
+export default CheckButton;
