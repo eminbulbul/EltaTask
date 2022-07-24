@@ -1,0 +1,150 @@
+.containerDiv {
+  background-color: #f3f4f6;
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-top: 3rem;
+}
+.textDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgButtonContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ContButDiv {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 9rem;
+}
+.ContBut {
+  background-color: #1d62e2;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.05rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 10.83rem;
+  height: 3.5238rem;
+  cursor: pointer;
+  border: none;
+}
+.ContBut:hover {
+  background-color: #0b2554;
+}
+.logoDiv {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 65%;
+  cursor: pointer;
+}
+.content {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 2.27rem;
+}
+.content-text {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.project-bar {
+  padding-top: 1.05rem;
+}
+.btns {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+.checkgroup {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  padding-top: 2rem;
+}
+span {
+  padding-left: 1rem;
+}
+.all-logo {
+  display: none;
+}
+@media (max-width: 1500px) {
+  .logoDiv {
+    margin-left: 60%;
+  }
+}
+@media (max-width: 1060px) {
+  .logoDiv {
+    margin-left: 45%;
+  }
+}
+@media (max-width: 700px) {
+  .containerDiv {
+    width: 100%;
+    padding: 0rem;
+    border-radius: 0rem;
+    margin-top: 1rem;
+  }
+  .app-icon {
+    display: none;
+  }
+  .imgButtonContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .btns {
+    width: 90%;
+    height: 5rem;
+    background-color: #1d62e2;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    align-content: center;
+    font-size: 1.5rem;
+  }
+  .btns:hover {
+    background-color: #0b2554;
+  }
+  .checkgroup {
+    align-items: center;
+    height: 1.2rem;
+  }
+  .all-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content {
+    font-size: 1.7rem;
+  }
+  .content-text {
+    font-size: 1.5rem;
+  }
+  .logoDiv {
+    margin-left: 30%;
+    transform: scale(0.9);
+  }
+  .ContBut {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 90%;
+    height: 5rem;
+  }
+  .ContButDiv {
+    margin-right: 0rem;
+    justify-content: center;
+  }
+  
+}

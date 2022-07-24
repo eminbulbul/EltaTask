@@ -3,11 +3,12 @@ import "aframe";
 import EltaLogo from "../assets/EltaLogo";
 import { Entity, Scene } from "aframe-react";
 import { useNavigate } from "react-router";
+import './TaskTwoStyle.css'
 const TaskTwo = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <div style={{cursor: "pointer",marginBottom:'3rem',display: "flex", justifyContent: "center"}}>
+      <div className="elta-logo">
         <EltaLogo
           onClick={() => {
             navigate("/");

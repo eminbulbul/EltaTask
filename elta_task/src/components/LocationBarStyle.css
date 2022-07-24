@@ -1,0 +1,43 @@
+.location-bar-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow-left {
+  height: 1.27rem;
+  width: 1.27rem;
+  padding-right: 1rem;
+  
+}
+.arrow-right {
+  height: 1.27rem;
+  width: 1.27rem;
+  padding-right: 1rem;
+  transform: rotate(180deg);
+}
+.back-next {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: #0B2554;
+}
+.left {
+  display: flex;
+  padding-right: 1rem;
+}
+.right {
+  display: flex;
+  padding-left: 1rem;
+}
+@media (max-width: 700px) {
+  .arrow-left {
+    border: solid 2px #0b2554;
+    border-radius: 10px;
+    padding: 8px;
+  }
+  .arrow-right {
+    border: solid 2px #0b2554;
+    border-radius: 10px;
+    padding: 8px;
+  }
+}
+

@@ -1,8 +1,6 @@
-import * as React from "react"
-import './styles/logoStyles.css'
+import * as React from "react";
+
 const AnimatedVideos = (props) => (
- <div className="appLogo"> 
-<div>
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={196.38}
@@ -40,13 +38,6 @@ const AnimatedVideos = (props) => (
       />
     </g>
   </svg>
-  </div>
-  <div style={{margin:"auto",marginTop:"2.5166rem"}}>
-        <input style={{transform:"scale(1.83)",marginRight:"1rem"}} type="checkbox" name="AnimatedVideos" id="AVideos" />
-        <label htmlFor="AVideos">Animated Videos</label>
-    </div>
-
-  </div>
-)
+);
 
 export default AnimatedVideos;

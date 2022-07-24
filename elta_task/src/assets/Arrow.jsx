@@ -1,7 +1,7 @@
 import * as React from "react";
 
 const Arrow = (props) => (
-  <div style={{cursor:"pointer"}}>
+  <div style={{ cursor: "pointer" }}>
     <svg
       data-name="Backward arrow"
       xmlns="http://www.w3.org/2000/svg"
