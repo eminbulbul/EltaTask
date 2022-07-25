@@ -31,6 +31,7 @@ const TaskOne = () => {
     if (animated) {
       setAllData([...allData, appName3]);
     }
+   
   }, [virtual, rendered, animated]);
 
   const handleClick = () => {
