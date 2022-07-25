@@ -8,10 +8,9 @@ import LocationBar from "../components/LocationBar";
 import { useNavigate } from "react-router";
 import Check from "../assets/Check";
 import UnCheck from "../assets/UnCheck";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AllLogo from "../assets/AllLogo";
-import { AppContext } from "../context/AppContext";
-import { useContext } from "react";
+import { useAppContext } from "../context/AppContext";
 
 const TaskOne = () => {
   const [virtual, setVirtual] = useState(false);
@@ -20,18 +19,27 @@ const TaskOne = () => {
 
   const navigate = useNavigate();
 
-  const { allData,setAllData } = useContext(AppContext);
-  const handleClick = () => {
+  const { allData, setAllData, appName1, appName2, appName3 } = useAppContext();
+
+  useEffect(() => {
     if (virtual) {
-      setAllData(...allData,["Virtual Tour"]);
+      setAllData([...allData, appName1]);
     }
     if (rendered) {
-      setAllData(...allData,["Rendered Images"]);
+      setAllData([...allData, appName2]);
     }
     if (animated) {
-      setAllData(...allData,["Animated Videos"]);
+      setAllData([...allData, appName3]);
     }
-    navigate("/results");
+  }, [virtual, rendered, animated]);
+
+  const handleClick = () => {
+    if (allData.length === 0) {
+      alert("Please Choose One");
+      return false;
+    } else {
+      navigate("/results");
+    }
   };
 
   return (
@@ -59,35 +67,34 @@ const TaskOne = () => {
             <VirtualTour className="app-icon" />
             <div className="checkgroup">
               {virtual ? <Check /> : <UnCheck />}
-              <span>Virtual Tour</span>
+              <span>{appName1}</span>
             </div>
           </button>
           <button className="btns" onClick={() => setRendered(!rendered)}>
             <RenderedImages className="app-icon" />
             <div className="checkgroup">
               {rendered ? <Check /> : <UnCheck />}
-              <span>Rendered Images</span>
+              <span>{appName2}</span>
             </div>
           </button>
           <button className="btns" onClick={() => setAnimated(!animated)}>
             <AnimatedVideos className="app-icon" />
             <div className="checkgroup">
               {animated ? <Check /> : <UnCheck className="uncheck" />}
-              <span>Animated Videos</span>
+              <span>{appName3}</span>
             </div>
           </button>
         </div>
-        <div className="ContButDiv" onClick={() => handleClick()}>
+        <div className="ContButDiv" onClick={handleClick}>
           <button className="ContBut">Continue</button>
         </div>
       </div>
-      <div
-        onClick={() => {
-          navigate("/");
-        }}
-        className="logoDiv"
-      >
-        <EltaLogo />
+      <div className="logoDiv">
+        <EltaLogo
+          onClick={() => {
+            navigate("/");
+          }}
+        />
       </div>
     </>
   );
