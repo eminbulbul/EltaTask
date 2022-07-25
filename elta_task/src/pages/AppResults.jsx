@@ -6,11 +6,11 @@ import EltaLogo from "../assets/EltaLogo";
 import LocationBar from "../components/LocationBar";
 import { useNavigate } from "react-router";
 const AppResults = () => {
-  const { allData,setAllData } = useContext(AppContext);
+  const { allData, setAllData } = useContext(AppContext);
   const navigate = useNavigate();
-  const handleClick = () =>{
+  const handleClick = () => {
     setAllData([]);
-    navigate("/")
+    navigate("/");
   };
 
   return (
@@ -21,7 +21,7 @@ const AppResults = () => {
       {allData.map((data) => {
         return <p>{data}</p>;
       })}
-      <EltaLogo onClick={(handleClick)}/>
+      <EltaLogo className="logoDiv" onClick={handleClick} />
     </div>
   );
 };
