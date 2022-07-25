@@ -25,15 +25,6 @@ const TaskOne = () => {
     if (virtual) {
       setAllData(...allData,["Virtual Tour"]);
     }
-    if (virtual && rendered) {
-      setAllData(...allData,["Virtual Tour", "Rendered Images"]);
-    }
-    if (virtual && rendered && animated) {
-      setAllData(...allData,["Virtual Tour", "Rendered Images", "Animated Videos"]);
-    }
-    if (rendered && animated) {
-      setAllData(...allData,["Rendered Images", "Animated Videos"]);
-    }
     if (rendered) {
       setAllData(...allData,["Rendered Images"]);
     }

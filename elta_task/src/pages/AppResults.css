@@ -1,0 +1,10 @@
+.result-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+  margin-top: 1rem;
+  border-radius: 2rem;
+  padding-top: 2rem;
+}
